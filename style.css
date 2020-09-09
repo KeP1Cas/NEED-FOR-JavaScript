@@ -96,7 +96,6 @@ body {
 }
 
 .enemy{
-    /* transform: rotate(180deg); */
     background: transparent url('./image/enemy2.png') center / cover no-repeat;
     
 }
