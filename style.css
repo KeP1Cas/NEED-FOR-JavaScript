@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+    background: url('./image/bg.jpg') center / cover no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border: 3px solid #ff00de;
+    width: 300px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 3s;
+}
+
+.neon {
+    color: #ffffff;
+    
+    font-weight: bold;
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    transition: 3s;
+}
+
+.car, .enemy{
+    width: 50px;
+    height: 100px;
+    background: transparent url('./image/player.png') center / cover no-repeat;
+    position: absolute;
+    left: 125px;
+    bottom: 10px;
+}
+
+.enemy{
+    /* transform: rotate(180deg); */
+    background: transparent url('./image/enemy2.png') center / cover no-repeat;
+    
+}
+
+.gameArea {
+    width: 300px;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+
+    background: rgb(36, 36, 36);
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    background: #fff;
+    left: 145px;
+}
