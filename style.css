@@ -59,9 +59,10 @@ body {
 }
 
 .btn {
-    display: flex;
-    margin: auto;
-    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
     border: 3px solid #ff00de;
     width: 300px;
     text-align: center;
@@ -72,6 +73,7 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     transition: 3s;
+    z-index: 200;
 }
 
 .neon {
@@ -91,8 +93,6 @@ body {
     height: 100px;
     background: transparent url('./image/player.png') center / cover no-repeat;
     position: absolute;
-    left: 125px;
-    bottom: 10px;
 }
 
 .enemy{
@@ -116,4 +116,22 @@ body {
     height: 50px;
     background: #fff;
     left: 145px;
+}
+
+.score {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background: #000;
+    padding: 1rem 0;
+    z-index: 200;
+    font-size: 1.5rem;
+    color: #ffffff;
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
