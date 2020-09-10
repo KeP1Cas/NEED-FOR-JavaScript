@@ -1,7 +1,8 @@
 let score = document.querySelector('.score'),
     start = document.querySelector('.start'),
     gameArea = document.querySelector('.gameArea')
-    car = document.createElement('div');
+    car = document.createElement('div'),
+    sos = document.querySelector('.sos');
 
 car.classList.add('car')
 
@@ -120,6 +121,7 @@ function moveEnemy() {
             setting.start = false;
             console.warn('ДТП ПИСЮНЬЧИК');
             start.classList.remove('hide');
+            sos.style.display = 'block';
         }
 
         item.y += setting.speed / 2;
